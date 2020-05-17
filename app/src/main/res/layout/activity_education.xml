@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#fff"
+    tools:context=".Education">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutStatus_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle_fill" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle_fill" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle_non" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rectangle_non" />
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/layoutStatus_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rectangle_fill" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rectangle_fill" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rectangle_non" />
+    </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education" />
+    <TextView
+        android:id="@+id/fullname"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Information" />
+    <TextView
+        android:id="@+id/email"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:textColor="#A2A2A2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:layout_marginBottom="15dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="School"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/searchableSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:id="@+id/status_education_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="Expected graduation date"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+                <Spinner
+                    android:id="@+id/year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:gravity="left"
+                android:text="Degree"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:text="Ex.Bachelor of Science"
+                android:textColor="#9B9B9B"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <EditText
+
+                android:id="@+id/degree"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_border"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:nextFocusForward="@+id/program"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:gravity="left"
+                android:text="Program"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:text="Ex.Computer Science"
+                android:textColor="#9B9B9B"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <EditText
+                android:id="@+id/program"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_border"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#fff"
+        >
+        <Button
+
+            android:background="@drawable/round_bg"
+            android:textColor="#fff"
+            android:id="@+id/back"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="Back"
+            android:visibility="gone"
+            />
+        <Button
+
+            android:background="@drawable/round_bg"
+            android:textColor="#fff"
+            android:id="@+id/next"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Next" />
+    </RelativeLayout>
+</LinearLayout>

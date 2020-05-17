@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "974498748125",
+    "firebase_url": "https://taiwanets-be2d0.firebaseio.com",
+    "project_id": "taiwanets-be2d0",
+    "storage_bucket": "taiwanets-be2d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974498748125:android:0db1bda679b71876522d34",
+        "android_client_info": {
+          "package_name": "com.example.taiwanets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974498748125-7ids5ofq8v7ojomugle7r8g2ph101ea7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.taiwanets",
+            "certificate_hash": "3bea1ca4e68e851218d7a7823ac14178b649a784"
+          }
+        },
+        {
+          "client_id": "974498748125-ht65u5bddbjofqohneq03vjd23qt5h23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGAYacGQEepA5NToIoy1uJN3TxP7sj2b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974498748125-ht65u5bddbjofqohneq03vjd23qt5h23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

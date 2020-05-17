@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#00AEBC</color>
+    <color name="colorPrimaryDark">#0056DE</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- color for button style -->
+    <color name="gradient_start_color">#0056DE</color>
+    <color name="gradient_end_color">#00AEBC</color>
+    <color name="white">#fff</color>
+    <color name="gradient_start_color_profile">#2AFFE2</color>
+    <color name="gradient_middle_color_profile">#0BB2BF</color>
+    <color name="gradient_end_color_profile">#7F0CB2</color>
+    <!-- color for slider -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <!-- color for login and sign up -->
+    <color name="hint">#B9B9B9</color>
+    <color name='border'>#A4D6FF</color>
+    <color name='transparent'>#00A4D6FF</color>
+
+</resources>
